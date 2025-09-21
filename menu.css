@@ -1,15 +1,104 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-   margin: 0;
-   padding: 0;
+    
 }
-body{
-   background:rgb(31, 30, 36);
-   color: rgb(31, 30, 36);
-}
-header{
-    width: 100%;
-    height: 250px;
-   
-}
+ header {
+        background-color: #f0f0f0; /* Cor de fundo do cabeçalho */
+        padding: 10px 20px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between; /* Alinha logo e navegação nas extremidades */
+        align-items: center; /* Alinha verticalmente */
+        max-width: 1200px; /* Limita a largura máxima do conteúdo */
+        margin: 0 auto; /* Centraliza o conteúdo */
+    }
+
+    .logo img {
+        height: 50px; /* Ajuste a altura da sua logo */
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Para alinhar os itens do menu */
+    }
+
+    nav ul li {
+        margin-left: 20px; /* Espaçamento entre os itens do menu */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+h1{
+    color: red;
+    text-align: center;
+    font-size: 70px;
+    }
+
+h2{
+    color: red;
+    text-align: center;
+    font-size: 40px;
+ }   
+
+    #produto{
+        display: grid;
+        height: 300px;
+        background: #ccc;
+        grid-template-columns: repeat( 2,1fr);
+
+
+    }
+    #produto div{
+        border: 3px solid green;
+    }
+
+    #banner{
+        display: grid;
+        height: 300px;
+        background:url("img-menu/banner-1033930_1280.webp")no-repeat center center;
+        background: cover;
+        justify-content: center;
+        align-items:center ;
+        margin: 30px 0px;
+        text-shadow:0px 0px 10px rgba(36, 125, 83, 0.4)
+    }
+    #banner h1{
+        color:#fff;
+        text-transform:uppercase ;
+        letter-spacing:10px ;
+        font-size: 45px;
+
+
+    }
+    #galeria span{
+        color:red;
+    }
+    #grid-galeria{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+
+    }
+    #galeria{
+        text-align: center;
+
+    }
+    #grid-galeria img{
+        width:100% ;
+        height: 250px;
+    }
+
+
